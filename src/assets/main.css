@@ -1,7 +1,6 @@
-/* @import './base.css'; */
-@import 'tailwindcss';
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'tailwindcss';
 
 *,
 *::before,
@@ -23,39 +22,21 @@ body {
     'Open Sans',
     'Helvetica Neue',
     sans-serif;
-  @apply text-sm font-normal text-gray-800;
+  @apply text-sm 2xl:text-lg font-normal text-gray-800;
 }
 
-/* #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+thead tr {
+  @apply bg-white;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+tbody tr {
+  @apply odd:bg-white even:bg-gray-50 hover:bg-gray-100 transition-colors;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+th {
+  @apply px-6 py-3 text-nowrap font-medium 2xl:font-semibold bg-gray-100 border-b border-gray-300;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-} */
+td {
+  @apply px-6 py-4 text-center;
+}
